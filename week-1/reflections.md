@@ -73,3 +73,18 @@ Can you remember what each of the following does of the top of your head? Write 
 -help: not for Mac/Unix version, on Windows it finds a manual page for a command (like “man” for Unix)
 
 ### 1.4 Forking and Cloning Reflection
+
+
+If you were going to write instructions for a new person on how to create a new repo, fork a repo, and clone a repo, what would they be? Why would you fork a repository as opposed to create a new one?
+-To create a new repository, go to your Github user page ( found at github.com/[your user name] ), click on the “+” at the upper right, select “New Repository” from the drop-down. On the next page, give your new repo a title, adjust the setttings as desired, and click the green “Create Repository” button.
+
+-To fork a repo, navigate to the GitHub URL for the repo you are trying to fork. Click the “Fork” button on the upper right, then select your user account from the pop-up. You will then be automatically navigated to the newly-forked repo on your account.
+
+-To clone a repo, navigate to the repo on your GitHub account (not the one you just forked from!). Select and copy the URL from the lower right of the page (listed below the “HTTPS clone URL” text) to your clipboard. Next, open your command-line terminal, and navigate to the folder you want to clone your repo to. Type the command “git clone “, then paste the URL from the clipboard at the end of the line, then hit Enter to clone the repo to the current folder.
+
+-When you fork a repository, you make an instant copy of an repo from another account to your own, which is both easier than creating a new repo and all copying all of the files, and also provides a chain of reference for where your code came from.
+
+What struggles did you have setting up git and GitHub? What did you learn in the process?
+-This exercise was not too much of a struggle, though getting a handle on the new terminology took some work. There was an extra challenge in this reflection phase, in that in order to explain the process succinctly, I had to get a more solid grasp on it first.
+
+-I learned how to use GitHub for the first time, and got a better grasp on explaining a process in the bargain. I also opened Sublime text for the first time, but did not yet spend the time to get a handle on that program.
