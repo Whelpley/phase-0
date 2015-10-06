@@ -1,4 +1,4 @@
-![This is the image alt text!](/imgs/site-map.jpg "Optional title")
+![This is the image alt text!](/week-2/imgs/site-map.jpg "Optional title")
 
 What are the 6 Phases of Web Design?
 1) Information Gathering - who is this site for, and what do you want them to do with it?
