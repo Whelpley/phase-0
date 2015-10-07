@@ -1,4 +1,6 @@
-![This is the image alt text!](/week-2/imgs/site-map.jpg "Optional title")
+
+![This is the image alt text!](/week-2/imgs/site-map.jpg "My Site Map")
+
 
 What are the 6 Phases of Web Design?
 1) Information Gathering - who is this site for, and what do you want them to do with it?
@@ -27,3 +29,4 @@ What is user experience design and why is it valuable?
 
 Which parts of the challenge did you find tedious?
 -I found it difficult to find a free site map creating tool that would let me export an image, so I wrote my map on paper, took a photo on my phone, and sent it to myself.
+-I also found the process of including an image here to be difficult.
