@@ -19,3 +19,4 @@ What questions did you ask during this challenge? What resources did you find to
 
 Which parts of the challenge did you enjoy and which parts did you find tedious?
 -While I enjoyed learning about this stage of the web design process, and am excited to learn more, I found the actual design process unpleasant, largely because of my inexperience with constructing a web page (just not knowing where to put things), and inexperience with choosing and using a wireframe design tool.
+-I also experienced a challenge in the pull request process in GitHub. I think it originated when I made 2 commits in a row, without pushing to GitHub, but right now I'm not sure. Either way, GitHub now tells me that "This branch has conflicts that must be resolved". I am now attempting to save the work (updated with this entry) in a new branch on git, then beginning the process again.
