@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>BERKSHIRE HATHAWAY</title>
+  <link type="text/css" rel="stylesheet" href="stylesheets/my-berkshire-stylesheet.css">
+</head>
+
+<body>
+  <header>
+      <h1><span>B</span>ERKSHIRE <span>H</span>ATHAWAY INC.</h1>
+      <p>3555 Farnam Street<br>Omaha, NE 68131</p>
+      <h2>Official Home Page</h2>
+  </header>
+
+
+  <section class="borders">
+    <ul id="leftcolumn">
+      <li><a href="#">A Message From Warren E. Buffett</a></li>
+      <li><a href="#">Annual & Interim Reports </a><br><span>Updated August 7, 2015</span></li>
+      <li><a href="#">Special Letters From Warren & Charlie RE:Past, Present and Future</a></li>
+      <li><a href="#">Link to SEC Filings</a></li>
+      <li><a href="#">Links to Berkshire Subsidiary Companies </a></li>
+      <li><a href="#">Corporate Governance </a></li>
+      <li><a href="#">Owner's Manual</a></li>
+      <li><a href="#">Letters from Warren E. Buffett Regarding Pledges to Make Gifts of Berkshire Stock</a></li>
+    </ul>
+
+    <ul id="rightcolumn">
+      <li><a href="#">News Releases </a><br><span>Updated August 10, 2015</span></li>
+      <li><a href="#">Warren Buffett's Letters to Berkshire Shareholders </a><br><span>Updated February 28, 2015</span></li>
+      <li><a href="#">Charlie Munger's Letters to Wesco Shareholders</a></li>
+      <li><a href="#">Annual Meeting Information </a></li>
+      <li><a href="#">Celebrating 50 Years of a Profitable Partnership</a><br><span>(A commemorative book first sold at the 2015 Annual Meeting and now for sale on eBay.)</span> </li>
+      <li><a href="#">Comparative Rights and Relative Prices of Class A and B Stock</a></li>
+      <li><a href="#">Berkshire Activewear</a></li>
+    </ul>
+  </section>
+
+  <section id="geico">
+
+      <a href="#"><img src="imgs/GeicoLogo.gif" /> </a><br>
+      <p>FOR A FREE CAR INSURANCE RATE QUOTE THAT COULD SAVE YOU SUBSTANTIAL MONEY</p>
+      <p><a href="#">WWW.GEICO.COM</a> OR CALL 1-888-395-6349, 24 HOURS A DAY</p>
+
+  </section>
+
+  <section class="borders">
+    <p>If you have any comments about our WEB page, you can either write us at the address shown above or e-mail us at <a href="mailto:berkshire@berkshirehathaway.com">berkshire@berkshirehathaway.com</a>. However, due to the limited number of personnel in our corporate office, we are unable to provide a direct response.</p>
+
+  </section>
+
+  <footer>
+    <p><a href="#">Legal Disclaimer</a></p>
+    <p>Copyright © 1978-2015 Berkshire Hathaway Inc.</p>
+  </footer>
+
+
+</body>
+
+<!--
+Reflection Time!
+
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+-You must have the correct file path linked to the external file.
+
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+-To position the link columns, we separated them into 2 sections, tagged each with an ID, then floated each left and right. This left the Geico section floating in the middle, so we ID'd that too and used clear:both in CSS to get it below the columns. This solution took a little while to realize, but was fairly simple to implement.
+
+
+What CSS did you use to modify the element style (like size, color, etc.)
+-We used the following CSS properties:
+color
+font-weight
+font-size
+text-align
+
+
+
+Did you modify the HTML to include classes or ids? If so, which did you chose and why? If you didn't, how would you know which one to add to your HTML?
+-Yes, we used ID's to float around the link columns and Geico box, because it was a quick way to do one thing to one element. We used a class to mark the boxes where we added borders (instead of using HTML <hr> tags) because there were two items that needed the same styling, which were not identical enough to pick out using standard selectors.
+
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+-It looks like the original BH site uses no CSS whatsoever. I believe the version we created is the hands-down winner in cleanliness and best practices, because it is much easier to read and alter when the stying is separated from the HTML content.
+
+-->
+
+</html>
+

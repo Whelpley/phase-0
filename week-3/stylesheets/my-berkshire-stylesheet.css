@@ -1,0 +1,49 @@
+
+* {
+  color: #000080;
+  background-color: #ffffff;
+}
+
+a:link {
+  color: #800080;
+  }
+
+a:visited {
+  color: #ff0000;
+}
+
+#leftcolumn {
+  float: left;
+}
+
+#rightcolumn {
+  float: right;
+}
+
+ul span {
+  color: black;
+  font-size: 8px;
+}
+
+header {
+  font-weight: bold;
+  text-align: center;
+  font-size: 12px;
+  line-break: auto;
+
+}
+
+header span {
+  font-size: 64px;
+}
+
+#geico {
+  text-align: center;
+  clear: both;
+  font-size: 10px;
+}
+
+.borders {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
