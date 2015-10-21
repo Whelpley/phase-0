@@ -1,0 +1,26 @@
+* {
+    font-family: Garamond;
+    margin: .1em;
+}
+
+header {
+    background-color: red;
+}
+
+footer {
+    background-color: blue;
+    clear: both;
+}
+
+.column-1 {
+    float: left;
+    background-color: green;
+    width: 48%;
+}
+
+.column-2 {
+    float: right;
+    background-color: yellow;
+    width: 48%;
+}
+
