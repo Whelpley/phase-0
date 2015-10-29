@@ -1,6 +1,6 @@
 # Numbers to Commas Solo Challenge
 
-# I spent [] hours on this challenge.
+# I spent [4] hours on this challenge.
 
 # Complete each step below according to the challenge directions and
 # include it in this file. Also make sure everything that isn't code
@@ -15,7 +15,7 @@
 # -A string with commas inserted under the following rules:
 # ---Every 3 spaces from the end of string,
 # ---Only if not at the end of string
-#(Sidenote: defining this output was/is a difficult step, for it is where the ruels for comma insertion start to get worked out.)
+#(Sidenote: defining this output was a difficult step, for it is where the rules for comma insertion start to get worked out.)
 # What are the steps needed to solve the problem?
 
 1)Convert integer to string
