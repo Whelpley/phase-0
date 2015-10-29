@@ -26,13 +26,46 @@ list_of_names = [
   "William Brinkert",
   "Scott Chou",
   "Bernice Anne W Chua",
-  "Abraham Clark"
+  "Abraham Clark",
+  "Michael Whelpley"
 ]
 
 def group_creator(list)
   total = list.length
-  groups = (total/4)
-  remainder = total%4
+  result = []
+  holder = []
+
+  if total % 5 == 0
+    result = list.each_slice(5).to_a
+  elsif total % 4 == 0
+    result = list.each_slice(5).to_a
+  else
+    roll_over = total % 4
+    holder << list.pop(roll_over)
+    result = list.each_slice(4).to_a
+
+=begin
+    if roll_over == 3
+      result << holder
+
+      #tricky part right here! gotta shift around those slices back into the final array first
+    elsif roll_over == 2
+      result[0].concat(holder[0])
+      result[1].concat(holder[1])
+    elsif roll_over == 1
+      result[0].concat(holder[0])
+    else
+      puts "Something is wrong!"
+    end
+
+    =end
+
+
+
+
+  end
+
+  p result
 
 
 end
