@@ -120,27 +120,28 @@ Questions on complexity:
 
 If you run this program three times in a row, will the program give you three different outputs?
 
-Yes it does; we wanted different outputs, we could call the following at the start of the method (included in the refactor):
+-Yes it does; if we wanted different outputs, we could call the following at the start of the method (which I have included in the refactor):
 
 list.shuffle!
 
 Should the program store past outputs?
 
-It could ...
+-It could, not sure how yet ... Will return to this part later if I have time.
 
 If one person were to leave the cohort, how would the accountability groups change?
 
-Hmm ...
+-Right off the bat, this sounds like this is a better job for a hash, rather than the multi-dimensional array I used initially. As it stands, if one person left the group, there would be one less person & that's it. Will return to this part later if I have time in the week.
 
 How do you decide when you're done? You'll need to decide. This is much more challenging than you probably think, especially since there are no pre-written tests.
 
-Whoo boy,
+-As a MVP, I decided it was done when the list would consistently return groups in the specified size (4 or 5 ppl, 3 if necessary).
 
 =end
 
 # Refactored Code!
 # Other things changed:
-#
+# Add an elsif clause to account for a group of 6, which would otherwise group one set of 5 and one of 1 person.
+# new Enumerables used: none yet; will return to this later in the week if I have time
 
 def group_creator(list)
   list.shuffle!
@@ -150,6 +151,8 @@ def group_creator(list)
 
   if total < 3
     puts "Not enough people to make a group!"
+  elsif total == 6
+    result = list.each_slice(3).to_a
   elsif total % 5 == 0
     result = list.each_slice(5).to_a
   elsif total % 4 == 0
@@ -172,3 +175,31 @@ def group_creator(list)
 end
 
 group_creator(list_of_names)
+
+
+=begin
+
+Reflection Time!
+
+What was the most interesting and most difficult part of this challenge?
+
+-The hardest part for me was getting the logic for group sorting down in the pseudocode step; there were lots of cases to account for, and I still feel my solution is a bit clunky. The most interesting part, however, was the translation of this logic into Ruby - also challenging, but more about the research and learning how methods work.
+
+Do you feel you are improving in your ability to write pseudocode and break the problem down?
+
+-I'd say so; this challenge definitely required solving in p-code first before any actual code could occur.
+
+Was your approach for automating this task a good solution? What could have made it even better?
+
+-I have a feeling that this is not the most elegant code, but in the time I have myself I could not find a magic bullet Enumerable method that would have addressed this.
+
+What data structure did you decide to store the accountability groups in and why?
+
+-I chose to go for an array, which evolved into a multi-level array to store each group - it felt like an easier set to manipulate. I do also see the value of returning a hash instead, as that would allow for easier shuffling of students from group to group after the groups are created.
+
+What did you learn in the process of refactoring your initial solution? Did you learn any new Ruby methods?
+
+-Not much, but I learned more about how .each_slice works.
+
+=end
+
