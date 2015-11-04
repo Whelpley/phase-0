@@ -79,3 +79,20 @@ startup_names.map! do |x|
 end
 
 p startup_names
+
+=begin
+
+Reflection Time
+
+What are some general rules you can apply to nested arrays?
+-Access them by index in the following fashion:
+array[outermost_index][middle_index][inner_index]
+-Be careful about applying enumerable methods to them; they might not work as you think. Often, the method must be called in a nested fashion, in on itself.
+
+What are some ways you can iterate over nested arrays?
+-As mentioned above, you can call the iterating method over the array in a nested fashion, by calling the same method inside of that method to access any innner arrays.
+
+Did you find any good new methods to implement or did you re-use one you were already familiar with? What was it and why did you decide that was a good option?
+-On my end, I got more familiar with the #map method and how it's useful for creating an altered copy of an array, or with it #map! version, changing the contents of an array. The latter was useful in the bonus challenge because we wanted to replicate the array structure, but also add to each of its elements.
+
+=end
