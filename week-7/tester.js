@@ -1,31 +1,26 @@
 var prompt = require('prompt');
 prompt.start();
 
-//
-// Start the prompt
-//
-
-
-
-var steve = {
-  name: "bill",
+var obj = {
+  password: 'lamepassword',
+  mindset: 'NY'
 }
 
 //
-// Get two properties from the user: username and email
+// Log the initial object.
 //
-var thinger = function (){
-prompt.get(['username'], function (err, result) {
+console.log('Initial object to be extended:');
+console.dir(obj);
+
+//
+// Add two properties to the empty object: username and email
+//
+prompt.addProperties(obj, ['username', 'email'], function (err) {
   //
   // Log the results.
   //
-  console.log('Command-line input received:');
-  console.log('  username: ' + result.username);
-  steve.name = result.username;
+  console.log('Updated object received:');
+  console.dir(obj);
 });
-}
 
-thinger();
-
-console.log(steve.name + " is cool");
-
+//console.log(obj); // this prints the old "obj" value, before the prompt and update - WTF? do I need to nest further results from the prompt within the first prompt call? That could get into a deep hole with repeated calls...
