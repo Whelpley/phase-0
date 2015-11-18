@@ -1,26 +1,45 @@
-var prompt = require('prompt');
-prompt.start();
 
-var obj = {
-  password: 'lamepassword',
-  mindset: 'NY'
+separateComma(123);
+separateComma(1234);
+separateComma(12345);
+separateComma(123456789);
+separateComma(1234567891);
+
+function separateComma (number)
+{
+
+  var numberString = number.toString();
+  var numArray = [];
+  var numWithCommas = "";
+
+  if (numberString.length > 3)
+  {
+
+      var indexCount = 0;
+      //declaring indexCount outside of the for loop so the variable
+      //updates are saved outside of the loop
+
+      for (var i = numberString.length-1; i >= 0; i --)//counting down to reverse the index of the string
+      {
+        if( (indexCount != 0) && (indexCount % 3 == 0) )
+        {
+          numArray.push(numberString.charAt(i) + ",");
+          indexCount +=1;
+        }
+        else
+        {
+          numArray.push(numberString.charAt(i));
+          indexCount += 1;
+        }
+      }
+
+    var numWithCommas = numArray.reverse().join("");
+
+    console.log(numWithCommas);
+  }
+  else
+  {
+    console.log(number);
+  }
+
 }
-
-//
-// Log the initial object.
-//
-console.log('Initial object to be extended:');
-console.dir(obj);
-
-//
-// Add two properties to the empty object: username and email
-//
-prompt.addProperties(obj, ['username', 'email'], function (err) {
-  //
-  // Log the results.
-  //
-  console.log('Updated object received:');
-  console.dir(obj);
-});
-
-//console.log(obj); // this prints the old "obj" value, before the prompt and update - WTF? do I need to nest further results from the prompt within the first prompt call? That could get into a deep hole with repeated calls...
