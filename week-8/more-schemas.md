@@ -1,23 +1,14 @@
-#header
-##header2
-
-
-*list
-*list
-
-
-
 # Challenge 8.5
 
 ## Release 2
 
-![My new hit RPG](/imgs/characters_magics.png)
+![My new hit RPG](imgs/characters_magics.png)
 
 This schema is for my new role-playing game, in which there are two tables, representing characters, and their magic powers. While some classes (such as Wizards and Hippies) have magic powers, others (such as Fighters and Bakers) do not. This is a good system to represent with a one-to-one relationship because all characters have a name, a level of experience, and a character class, but not all have magic powers, so those fields are optional.
 
 ## Release 4
 
-![Going shopping](/imgs/grocery.png)
+![Going shopping](imgs/grocery.png)
 
 
 ##Release 6: Reflection
