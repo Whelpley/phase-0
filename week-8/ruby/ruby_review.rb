@@ -4,7 +4,7 @@
 # Pseudocode
 
 =begin
--Create an new global variable, $fib_seq, an array initialized to [0,1], to represent Fibonacci sequence.
+-Declare an new global variable, $fib_seq, initialized to [0,1], to represent Fibonacci sequence.
 -Define a method fib_gen to generate Nth digit of Fib sequence:
   -Takes one argument, the digit to be generated
   -Check if array index is defined:
@@ -65,6 +65,8 @@ end
 
 # Refactored Solution
 
+# I did not find any methods or other ways to refactor my code. Such shame!
+
 
 $fib_seq = [0, 1]
 
@@ -95,16 +97,20 @@ def is_fibonacci?(num)
 end
 
 
-
-
 # Reflection
 
 =begin
 
 What concepts did you review or learn in this challenge?
 
+-In this challenge, I reviewed looping structures, and for the first time, used an infinite loop that only broke under the true/false conditions being acheived. I learned that explicitly returning a value is sufficient to break the loop; a specific "break" command is not needed.
+
 What is still confusing to you about Ruby?
 
+-Not so much a Ruby thing, but I do find it challenging to switch between languaguesl having just spend a week swimming in JavaScipt, it's a bit tricky learning to walk in Ruby land again.
+
 What are you going to study to get more prepared for Phase 1?
+
+-For Ruby, I plan on reading up on more of "The Well Grounded Rubyist", and then next week (or this week, if I have time), tackling the more difficult challenges for the list. If I'm feeling masochistic, I will try to finish Why's Guide.
 
 =end
