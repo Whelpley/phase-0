@@ -26,7 +26,7 @@
 class Die
   def initialize(labels)
     unless !(labels.empty?) && (labels.is_a? Array)
-      raise ArgumentError.new("Only non-empty arrays are allowed a input.")
+      raise ArgumentError.new("Only non-empty arrays are allowed to be input.")
     end
     @label_selection = labels
   end
